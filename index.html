@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مصمم الرسوم البيانية والدوال</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- ربط مكتبة Math.js لتحليل الدوال -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+  <!-- ربط مكتبة Plotly.js لرسم الرسوم البيانية -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>مصمم الرسوم البيانية والدوال</h1>
+  </header>
+  <main>
+    <div class="controls">
+      <label for="functionInput">أدخل الدالة:</label>
+      <input type="text" id="functionInput" placeholder="مثال: sin(x)">
+      
+      <label for="rangeInput">مجال \(x\) (مثال: -10,10):</label>
+      <input type="text" id="rangeInput" placeholder="-10,10">
+      
+      <button id="plotButton">ارسم</button>
+    </div>
+    <div id="chart"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
